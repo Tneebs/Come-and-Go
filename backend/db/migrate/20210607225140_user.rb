@@ -1,4 +1,4 @@
-class User < ActiveRecord::Migration[6.1]
+class Users < ActiveRecord::Migration[6.1]
   def change
     create_table :users do |t|
       t.string :first_name
@@ -9,6 +9,9 @@ class User < ActiveRecord::Migration[6.1]
       t.string :city
       t.string :state
       t.integer :position
+      t.integer :user_id
+      
+      t.timestamps
     end
   end
 end
